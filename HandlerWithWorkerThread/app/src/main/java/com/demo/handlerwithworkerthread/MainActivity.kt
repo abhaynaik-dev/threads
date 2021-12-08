@@ -12,15 +12,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         printCurrentThread()
-        //val threatsObj = CheckThreatsWithHandler(this)
-        val threatsObj = CheckThreatWithExecutor(this)
+        val threatsObj = CheckThreatsWithHandler(this)
         Log.d(TAG, "[RootBear] is device rooted -"+threatsObj.checkThreats())
         printCurrentThread()
 
     }
 
     companion object{
-        const val TAG = "HandlerwithWorkerThread"
+        const val TAG = "HandlerWithWorkerThread"
 
         fun printCurrentThread(){
             Log.d(TAG, "Thread name: "+Thread.currentThread().name)
