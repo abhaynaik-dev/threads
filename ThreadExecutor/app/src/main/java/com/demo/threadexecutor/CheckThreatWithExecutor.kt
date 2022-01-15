@@ -33,7 +33,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            detectRootManagementApps = rootBeer.detectRootManagementApps() == true
+            detectRootManagementApps = rootBeer.detectRootManagementApps()
             Log.d(MainActivity.TAG, "detectRootManagementApps result is: "+detectRootManagementApps)
             printCurrentThread()
             latch.countDown()
@@ -41,7 +41,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            detectPotentiallyDangerousApps = rootBeer.detectPotentiallyDangerousApps() == true
+            detectPotentiallyDangerousApps = rootBeer.detectPotentiallyDangerousApps()
             Log.d(MainActivity.TAG, "detectPotentiallyDangerousApps result is: "+detectPotentiallyDangerousApps)
             printCurrentThread()
             latch.countDown()
@@ -49,7 +49,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            detectRootCloakingApps = rootBeer.detectRootCloakingApps() == true
+            detectRootCloakingApps = rootBeer.detectRootCloakingApps()
             Log.d(MainActivity.TAG, "detectRootCloakingApps result is: "+detectRootCloakingApps)
             printCurrentThread()
             latch.countDown()
@@ -57,7 +57,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForSuBinary = rootBeer.checkForSuBinary() == true
+            checkForSuBinary = rootBeer.checkForSuBinary()
             Log.d(MainActivity.TAG, "checkForSuBinary result is: "+checkForSuBinary)
             printCurrentThread()
             latch.countDown()
@@ -65,7 +65,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkSuExists = rootBeer.checkSuExists() == true
+            checkSuExists = rootBeer.checkSuExists()
             Log.d(MainActivity.TAG, "checkSuExists result is: "+checkSuExists)
             printCurrentThread()
             latch.countDown()
@@ -73,7 +73,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForBusyBoxBinary = rootBeer.checkForBusyBoxBinary() == true
+            checkForBusyBoxBinary = rootBeer.checkForBusyBoxBinary()
             Log.d(MainActivity.TAG, "checkSuExists result is: "+checkSuExists)
             printCurrentThread()
             latch.countDown()
@@ -81,7 +81,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForRWPaths = rootBeer.checkForRWPaths() == true
+            checkForRWPaths = rootBeer.checkForRWPaths()
             Log.d(MainActivity.TAG, "checkForRWPaths result is: "+checkForRWPaths)
             printCurrentThread()
             latch.countDown()
@@ -89,7 +89,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForDangerousProps = rootBeer.checkForDangerousProps() == true
+            checkForDangerousProps = rootBeer.checkForDangerousProps()
             Log.d(MainActivity.TAG, "checkForDangerousProps result is: "+checkForDangerousProps)
             printCurrentThread()
             latch.countDown()
@@ -97,7 +97,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForRootNative = rootBeer.checkForRootNative() == true
+            checkForRootNative = rootBeer.checkForRootNative()
             Log.d(MainActivity.TAG, "checkForRootNative result is: "+checkForRootNative)
             printCurrentThread()
             latch.countDown()
@@ -105,7 +105,7 @@ class CheckThreatWithExecutor(context: Context) {
 
         threadPool.execute {
             Thread.sleep(SLEEP_TIME)
-            checkForMagiskBinary = rootBeer.checkForMagiskBinary() == true
+            checkForMagiskBinary = rootBeer.checkForMagiskBinary()
             Log.d(MainActivity.TAG, "checkForMagiskBinary result is: "+checkForMagiskBinary)
             printCurrentThread()
             latch.countDown()

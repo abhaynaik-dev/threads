@@ -12,9 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         printCurrentThread()
-        //val threatsObj = CheckThreatsWithHandler(this)
         val threatsObj = CheckThreatWithExecutor(this)
-        Log.d(TAG, "[RootBear] is device rooted -"+threatsObj.checkThreats())
+        Log.d(TAG, "[RootBeer] is device rooted -"+threatsObj.checkThreats())
         printCurrentThread()
 
     }

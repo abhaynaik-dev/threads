@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         printCurrentThread()
         val threatsObj = CheckThreatWithExecutor(this)
-        Log.d(TAG, "[RootBear] is device rooted -"+threatsObj.checkThreats())
+        Log.d(TAG, "[RootBeer] is device rooted -"+threatsObj.checkThreats())
         printCurrentThread()
     }
 
