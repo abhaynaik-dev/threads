@@ -1,5 +1,5 @@
 # Android Handler and Thread Exceutor example
 
-
-<b>HandlerWithWorkerThread</b> is an example of application root detection using <b>RootBeer</b> library using Handler  <br>
-<b>ThreadExecutor</b> is an example of application root detection using <b>RootBeer</b> library using Thread Executor with parallel threading or on a single thread  <br>
+<b>Coroutines</b> is an example of root detection application using <b>RootBeer</b> library with Coroutines (Prallel | Sequential)  <br>
+<b>HandlerWithWorkerThread</b> is an example of root detection application using <b>RootBeer</b> library with Handler  <br>
+<b>ThreadExecutor</b> is an example of root detection application using <b>RootBeer</b> library with Thread Executor (Prallel | Sequential) <br>
